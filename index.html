@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikash Bhattarai | AI Engineer</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CDN Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Removed old particle and glow effects to match clean bento aesthetic -->
+    
+    <div class="app-container">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Bikash Bhattarai Logo" class="logo-img">
+                <span class="logo-text">Bikash Bhattarai</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#blog">Blog</a>
+                <a href="#brands">Brands</a>
+            </div>
+            <div class="user-action">
+                <!-- Theme Toggle -->
+                <button id="theme-toggle" class="btn-theme-bento">
+                    <i class="fas fa-sun light-icon"></i>
+                    <i class="fas fa-moon dark-icon"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Hero Section Bento Grid -->
+        <main id="home" class="bento-hero section">
+            <!-- Left Side Grid -->
+            <div class="bento-left">
+                <!-- Tall Portrait Card -->
+                <div class="bento-card card-tall" style="background-image: url('bento_portrait.png');">
+                    <button class="icon-btn btn-plus"><i class="fas fa-plus"></i></button>
+                </div>
+                <!-- Dark Text Card -->
+                <div class="bento-card card-dark">
+                    <div class="dot"></div>
+                    <p>BUILDING SCALABLE<br>AI SYSTEMS</p>
+                </div>
+                <!-- Wavy Pattern Card -->
+                <div class="bento-card card-wavy" style="background-image: url('bento_pattern.png');"></div>
+                
+                <!-- Overlapping Mint Card -->
+                <div class="bento-card card-mint">
+                    <img src="logo.png" alt="Logo" class="mint-logo">
+                    <p>DEEPLEARNING.AI<br>CERTIFIED</p>
+                </div>
+                
+                <!-- Overlapping Center Circle -->
+                <div class="bento-circle-container">
+                    <div class="circle-card">
+                        <img src="bento_metal.png" alt="3D Element" class="metal-element">
+                    </div>
+                    <div class="vertical-line"></div>
+                    <p class="circle-label">Senior AI Engineer /<br><u>ML Researcher</u></p>
+                </div>
+            </div>
+
+            <!-- Right Side Content -->
+            <div class="bento-right">
+                <h1 class="massive-text">ONE-CLICK<br>FOR AI<br>EXCELLENCE</h1>
+                
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-pill-dark">VIEW PROJECTS</a>
+                    <a href="#contact" class="btn btn-circle"><i class="fas fa-arrow-right"></i></a>
+                    <div class="btn-pill-pattern" style="background-image: url('bento_pattern.png');"></div>
+                </div>
+
+                <div class="hero-list">
+                    <div class="list-item">
+                        <h2>01</h2>
+                        <img src="bento_portrait.png" alt="Thumb" class="list-thumb">
+                        <p>Leading GenAI applications & RAG systems</p>
+                        <span class="year">/2024</span>
+                    </div>
+                    <div class="list-item">
+                        <h2>02</h2>
+                        <img src="bento_pattern.png" alt="Thumb" class="list-thumb">
+                        <p>Computer Vision models for medical imaging</p>
+                        <span class="year">/2022</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Stats & Credibility Section -->
+        <section id="stats" class="section stats-section sr-bottom">
+            <div class="stats-grid">
+                <div class="stat-card" data-tilt>
+                    <i class="fas fa-code-branch"></i>
+                    <h3 id="stat-repos">10+</h3>
+                    <p>AI Projects</p>
+                </div>
+                <div class="stat-card" data-tilt>
+                    <i class="fas fa-star"></i>
+                    <h3 id="stat-stars">50+</h3>
+                    <p>GitHub Stars</p>
+                </div>
+                <div class="stat-card" data-tilt>
+                    <i class="fas fa-globe"></i>
+                    <h3>5</h3>
+                    <p>Domains Mastered</p>
+                </div>
+                <div class="stat-card cert-card" data-tilt>
+                    <i class="fas fa-certificate"></i>
+                    <h3>Certified</h3>
+                    <p>DeepLearning.AI</p>
+                </div>
+            </div>
+            <div class="github-heatmap sr-bottom">
+                <h3>GitHub Contributions</h3>
+                <img id="heatmap-img" src="https://ghchart.rshah.org/10b981/ivikashsharma999-glitch" alt="GitHub Heatmap">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section sr-bottom">
+            <div class="section-header">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image" data-tilt>
+                    <div class="img-placeholder">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Hi, I'm Bikash Bhattarai</h3>
+                    <p>I am driven by the immense potential of Artificial Intelligence to solve complex, real-world problems. My journey in tech is fueled by an insatiable curiosity and a desire to build systems that learn, adapt, and improve.</p>
+                    <p>Whether it's fine-tuning large language models, deploying scalable computer vision pipelines, or architecting robust ML infrastructure, I thrive at the intersection of innovative research and practical engineering.</p>
+                    <a href="#" class="btn btn-outline download-cv">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section sr-bottom">
+            <div class="section-header">
+                <h2>Skills & Tech Stack</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="radar-container" data-tilt>
+                    <canvas id="skillsRadar"></canvas>
+                </div>
+                <div class="skills-bars">
+                    <div class="skill-category">
+                        <h4>ML Frameworks & Cloud</h4>
+                        <div class="skill-tags">
+                            <span class="tag"><i class="fas fa-fire"></i> PyTorch</span>
+                            <span class="tag"><i class="fas fa-brain"></i> TensorFlow</span>
+                            <span class="tag">🤗 HuggingFace</span>
+                            <span class="tag"><i class="fas fa-link"></i> LangChain</span>
+                            <span class="tag"><i class="fab fa-aws"></i> AWS</span>
+                            <span class="tag"><i class="fab fa-google"></i> GCP</span>
+                        </div>
+                    </div>
+                    <div class="skill-category mt-4">
+                        <h4>Languages & Tools</h4>
+                        <div class="skill-bar-container">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width: 95%;"></div></div>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-info">
+                                <span>JavaScript / TypeScript</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-info">
+                                <span>SQL & NoSQL</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-info">
+                                <span>Docker & Kubernetes</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width: 75%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section sr-bottom">
+            <div class="section-header">
+                <h2>Projects Showcase</h2>
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="nlp">NLP</button>
+                    <button class="filter-btn" data-filter="cv">Computer Vision</button>
+                    <button class="filter-btn" data-filter="genai">Gen AI</button>
+                </div>
+            </div>
+            <div class="projects-grid" id="github-projects-container">
+                <!-- Projects will be fetched via JS -->
+                <div class="loading-spinner"><i class="fas fa-circle-notch fa-spin"></i> Loading GitHub Projects...</div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline -->
+        <section id="experience" class="section timeline-section sr-bottom">
+            <div class="section-header">
+                <h2>Experience & Journey</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-tilt>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 - Present</span>
+                        <h3>Senior AI Engineer</h3>
+                        <h4>Tech Innovators Inc.</h4>
+                        <p>Leading the development of highly scalable GenAI applications, optimizing LLM inference pipelines, and architecting RAG (Retrieval-Augmented Generation) systems for enterprise clients.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-tilt>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 - 2024</span>
+                        <h3>Machine Learning Researcher</h3>
+                        <h4>Data Sciences Lab</h4>
+                        <p>Developed state-of-the-art computer vision models for medical imaging. Published 2 papers on attention mechanisms in deep learning.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-tilt>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2020 - 2022</span>
+                        <h3>Software Developer Intern</h3>
+                        <h4>StartupHub</h4>
+                        <p>Built robust backend APIs using Node.js and Python. Transitioned into data engineering and early ML prototyping.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="section blog-section sr-bottom">
+            <div class="section-header">
+                <h2>Case Studies & Articles</h2>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-card" data-tilt>
+                    <div class="blog-img" style="background: linear-gradient(45deg, #10b981, #3b82f6);"></div>
+                    <div class="blog-content">
+                        <span class="blog-tag">Gen AI</span>
+                        <h3>Demystifying Retrieval-Augmented Generation (RAG)</h3>
+                        <p>A deep dive into how RAG enhances LLMs by connecting them to external knowledge bases.</p>
+                        <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card" data-tilt>
+                    <div class="blog-img" style="background: linear-gradient(45deg, #8b5cf6, #ec4899);"></div>
+                    <div class="blog-content">
+                        <span class="blog-tag">Computer Vision</span>
+                        <h3>Real-time Object Detection with YOLOv8</h3>
+                        <p>Implementing and optimizing YOLOv8 for edge devices in smart city applications.</p>
+                        <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Brands Section -->
+        <section id="brands" class="section brands-section sr-bottom">
+            <div class="section-header">
+                <h2>Content & Media Brands</h2>
+            </div>
+            <div class="brands-grid">
+                <!-- The Compounding Mind -->
+                <div class="brand-card" data-tilt>
+                    <div class="brand-icon"><i class="fas fa-brain"></i></div>
+                    <h3>The Compounding Mind</h3>
+                    <div class="brand-links">
+                        <a href="https://www.instagram.com/thecompounding.mind?igsh=dnk0NG5sbnVhamRj" target="_blank" class="btn-social ig"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="https://youtube.com/@thecompounding_mind?si=5vrEwg1FiXJ9FeqT" target="_blank" class="btn-social yt"><i class="fab fa-youtube"></i> YouTube</a>
+                    </div>
+                </div>
+                <!-- Inner Dominion -->
+                <div class="brand-card" data-tilt>
+                    <div class="brand-icon"><i class="fas fa-crown"></i></div>
+                    <h3>Inner Dominion</h3>
+                    <div class="brand-links">
+                        <a href="https://www.instagram.com/innerdominion.hq?igsh=MXF5eGs3b3VucDc5ZQ==" target="_blank" class="btn-social ig"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="https://youtube.com/@innerdominionhq?si=JJYQ5rQKmFJX8WuH" target="_blank" class="btn-social yt"><i class="fab fa-youtube"></i> YouTube</a>
+                    </div>
+                </div>
+                <!-- Beyond the self -->
+                <div class="brand-card" data-tilt>
+                    <div class="brand-icon"><i class="fas fa-space-shuttle"></i></div>
+                    <h3>Beyond the self</h3>
+                    <div class="brand-links">
+                        <a href="https://www.instagram.com/beyond_the.self?igsh=N2huMHRrc3NueGlz" target="_blank" class="btn-social ig"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="https://youtube.com/@beyond_themindhq?si=jb1vQtTf2XZL-6wY" target="_blank" class="btn-social yt"><i class="fab fa-youtube"></i> YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section sr-bottom">
+            <div class="section-header">
+                <h2>Let's Collaborate</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="calendly-container" data-tilt>
+                    <h3>Book a Discovery Call</h3>
+                    <!-- Calendly inline widget placeholder -->
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/" style="min-width:320px;height:400px;">
+                        <div class="calendly-placeholder">
+                            <i class="far fa-calendar-alt fa-3x"></i>
+                            <p>Calendly Embed Area<br><small>(Replace data-url in HTML with your link)</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container" data-tilt>
+                    <h3>Send a Message</h3>
+                    <div class="direct-contacts">
+                        <a href="mailto:ivikashsharma999@gmail.com" class="direct-contact-item"><i class="fas fa-envelope"></i> ivikashsharma999@gmail.com</a>
+                        <a href="https://www.linkedin.com/in/vikash-sharma-411b38263" target="_blank" class="direct-contact-item"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://t.me/Bikash_bhattarai99" target="_blank" class="direct-contact-item"><i class="fab fa-telegram"></i> Telegram</a>
+                    </div>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="from_name" name="from_name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="reply_to" name="reply_to" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message <i class="fas fa-paper-plane"></i></button>
+                        <div id="form-status" class="mt-2 text-center"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/vikash-sharma-411b38263" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://t.me/Bikash_bhattarai99" target="_blank"><i class="fab fa-telegram"></i></a>
+            </div>
+            <p>&copy; 2026 Bikash Bhattarai. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
